@@ -1,0 +1,62 @@
+html {
+  --cutoff: 1440px;
+  --gutter-size: 20px;
+  --grid-margin-size: 24px;
+  --number-of-columns: 4;
+
+  @screen md {
+    --gutter-size: 8px;
+    --grid-margin-size: 30px;
+    --number-of-columns: 12;
+  }
+
+  @screen lg {
+    --gutter-size: 10px;
+    --grid-margin-size: 60px;
+    --number-of-columns: 12;
+  }
+
+  @screen xl {
+    --gutter-size: 12px;
+    --grid-margin-size: 120px;
+    --number-of-columns: 12;
+  }
+}
+
+.custom-grid {
+  --max-content-width: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns:
+    minmax(calc(var(--grid-margin-size, 40px) - var(--gutter-size, 20px)), 1fr) repeat(
+      var(--number-of-columns, 12),
+      minmax(
+        0,
+        calc(
+          var(--cutoff) / var(--number-of-columns, 12) - var(--gutter-size, 20px) *
+            (var(--number-of-columns, 12) - 1) / var(--number-of-columns, 12)
+        )
+      )
+    )
+    minmax(calc(var(--grid-margin-size, 40px) - var(--gutter-size, 20px)), 1fr);
+  grid-column-gap: var(--gutter-size, 20px);
+}
+
+.custom-subgrid {
+  --max-content-width: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(
+    var(--number-of-columns, 12),
+    minmax(
+      0,
+      calc(
+        var(--cutoff) / var(--number-of-columns, 12) - var(--gutter-size, 20px) *
+          (var(--number-of-columns, 12) - 1) / var(--number-of-columns, 12)
+      )
+    )
+  );
+  grid-column-gap: var(--gutter-size, 20px);
+}

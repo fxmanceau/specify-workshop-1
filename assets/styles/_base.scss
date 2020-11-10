@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  backface-visibility: hidden;
+  font-style: normal;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  overscroll-behavior-y: none;
+  scroll-behavior: smooth;
+}
