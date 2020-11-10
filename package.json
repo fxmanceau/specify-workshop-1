@@ -9,7 +9,9 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext .js,.vue --ignore-path .eslintignore .",
     "format": "prettier --config .prettierrc --write \"./**/*.+(js|vue|json|yml|yaml|css|scss)\" --ignore-path .eslintignore",
-    "lint": "npm run lint:js"
+    "lint": "npm run lint:js",
+    "specify:sync": "specify sync -C .specifyrc/light-theme.js && specify sync -C .specifyrc/dark-theme.js",
+    "specify:extract": "specify extract -C .specifyrc/light-theme.js && specify extract -C .specifyrc/dark-theme.js"
   },
   "lint-staged": {
     "*.{js,vue}": [
@@ -31,6 +33,7 @@
   "devDependencies": {
     "@nuxtjs/eslint-config": "^3.1.0",
     "@nuxtjs/eslint-module": "^2.0.0",
+    "@specifyapp/cli": "0.0.46",
     "babel-eslint": "^10.1.0",
     "eslint": "^7.10.0",
     "eslint-config-prettier": "^6.12.0",
