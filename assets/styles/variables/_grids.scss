@@ -1,0 +1,8 @@
+@for $i from 1 through 14 {
+  .col-start-#{$i} {
+    grid-column-start: #{$i};
+  }
+  .col-end-#{$i} {
+    grid-column-end: #{$i};
+  }
+}

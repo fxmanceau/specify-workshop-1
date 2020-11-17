@@ -1,26 +1,8 @@
 html {
   --cutoff: 1440px;
   --gutter-size: 20px;
-  --grid-margin-size: 24px;
-  --number-of-columns: 4;
-
-  @screen md {
-    --gutter-size: 8px;
-    --grid-margin-size: 30px;
-    --number-of-columns: 12;
-  }
-
-  @screen lg {
-    --gutter-size: 10px;
-    --grid-margin-size: 60px;
-    --number-of-columns: 12;
-  }
-
-  @screen xl {
-    --gutter-size: 12px;
-    --grid-margin-size: 120px;
-    --number-of-columns: 12;
-  }
+  --grid-margin-size: 100px;
+  --number-of-columns: 12;
 }
 
 .custom-grid {

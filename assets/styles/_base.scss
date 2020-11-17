@@ -20,3 +20,8 @@ body {
   overscroll-behavior-y: none;
   scroll-behavior: smooth;
 }
+
+#__nuxt,
+#__layout {
+  height: 100vh;
+}
