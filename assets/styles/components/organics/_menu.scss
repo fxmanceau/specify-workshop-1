@@ -1,0 +1,17 @@
+.o-menu {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--accent-base);
+  padding-top: var(--base-space-26);
+  padding-bottom: var(--base-space-11);
+  padding-left: var(--base-space-30);
+
+  h2 {
+    margin-bottom: var(--base-space-18);
+  }
+
+  li {
+    color: var(--neutral-n-1);
+    margin-bottom: var(--base-space-6);
+  }
+}

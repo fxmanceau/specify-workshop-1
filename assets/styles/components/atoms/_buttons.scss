@@ -1,0 +1,15 @@
+.a-button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: var(--base-font-size-4);
+  color: var(--button-white);
+  padding: var(--base-space-4) var(--base-space-3);
+
+  &--green {
+    background-color: var(--accent-base);
+  }
+
+  &--red {
+    background-color: var(--semantic-red-base);
+  }
+}

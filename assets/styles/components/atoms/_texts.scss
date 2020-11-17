@@ -1,0 +1,26 @@
+.a-text--title {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: var(--base-font-size-12);
+  color: var(--neutral-n-4);
+}
+
+.a-text--subtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: var(--base-font-size-8);
+  color: var(--neutral-n-4);
+}
+
+.a-text--body-s {
+  color: var(--neutral-n-3);
+}
+
+.a-text--label {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: var(--base-font-size-4);
+  color: var(--neutral-n-4);
+  margin-bottom: var(--base-space-2);
+}

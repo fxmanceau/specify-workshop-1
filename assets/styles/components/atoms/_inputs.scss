@@ -1,0 +1,13 @@
+.a-input--text {
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: var(--base-font-size-4);
+  color: var(--neutral-n-4);
+  border: 1px solid var(--neutral-n-1);
+  padding: var(--base-space-3) var(--base-space-2);
+
+  &:focus {
+    border: 1px solid var(--accent-base);
+  }
+}

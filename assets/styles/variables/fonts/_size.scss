@@ -1,0 +1,7 @@
+:root {
+  --base-font-size-value: 0.25rem;
+
+  @for $i from 1 through 48 {
+    --base-font-size-#{$i}: calc(var(--base-font-size-value) * #{$i});
+  }
+}
